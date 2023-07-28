@@ -103,9 +103,8 @@ services:
     
   phpmyadmin:
     image: phpmyadmin
-    restart: always
     ports:
-      - 127.0.0.1:9001:80
+      - 127.0.0.1::80
     environment:
       - PMA_HOST=db
     depends_on:
